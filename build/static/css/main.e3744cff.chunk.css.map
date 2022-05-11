@@ -1,0 +1,1 @@
+{"version":3,"sources":["bg.css"],"names":[],"mappings":"AAEA,OACI,wMAGJ","file":"main.e3744cff.chunk.css","sourcesContent":["\n\n#trail {\n    background: url('https://images.unsplash.com/photo-1468779036391-52341f60b55d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1368&q=80')\n    center/cover no-repeat fixed ;\n    \n}\n"]}
