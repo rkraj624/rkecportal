@@ -12,7 +12,7 @@ import {
 const Footer = () => {
   return (
 <div className=" ">
-<footer className="text-center text-white" style={{backgroundColor: "#3f51b5"}}>
+<footer className="text-center text-white bg-dark">
   <div className="container">
     <section className="mt-5">
       <div className="row text-center d-flex justify-content-center pt-5">
