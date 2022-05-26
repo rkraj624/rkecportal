@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 import classnames from 'classnames'
 import { adminAddSubject } from '../../redux/action/adminAction'
-import AdminHomeHelper from './AdminHomeHelper'
+import AdminNavbar from './AdminNavbar'
 
 
 const AdminAddSubject = () => {
@@ -50,7 +50,7 @@ const AdminAddSubject = () => {
 
     return (
         <div>
-            {store.admin.isAuthenticated ? <> <AdminHomeHelper />
+            {store.admin.isAuthenticated ? <> <AdminNavbar />
                 <div className="container mt-5">
                     <div className="row justify-content-center">
                         <div className="col-md-4">

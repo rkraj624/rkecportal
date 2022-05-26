@@ -74,7 +74,7 @@ const LoginPage = () => {
                                         }
                                     </div>
                                 </div>
-                                {!isLoading && <button type="submit" className="btn btn-info btn-block">Login</button>}
+                                {!isLoading && <button type="submit" className="btn btn-primary btn-block">Login</button>}
                             </form>
                         </div>
                     </div>

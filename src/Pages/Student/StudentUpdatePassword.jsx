@@ -58,7 +58,7 @@ const StudentUpdatePassword = () => {
                                     })}  type="password" id="passwordCId" />
                                     {error.confirmNewPassword && (<div className="invalid-feedback">{error.confirmNewPassword}</div>)}
                                 </div>
-                                <button type="submit" class="btn btn-info btn-block ">Update Password</button>
+                                <button type="submit" class="btn btn-primary btn-block ">Update Password</button>
                             </form>
                         </div>
                     </div>

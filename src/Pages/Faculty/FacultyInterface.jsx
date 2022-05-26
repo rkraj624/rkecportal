@@ -26,7 +26,7 @@ const FacultyInterface = () => {
                                         <div className="card-body">
                                             <h5 className="card-title">{store.faculty.faculty.faculty.name}</h5>
                                             <h5 className="card-title">{store.faculty.faculty.faculty.registrationNumber}</h5>
-                                            <Link to='/faculty/updateProfile'>UPDATE PROFILE</Link>
+                                            <Link className='nav-link text-success' to='/faculty/updateProfile'>UPDATE PROFILE</Link>
                                         </div>
                                     </div>
                                 </div>

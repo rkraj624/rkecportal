@@ -31,7 +31,9 @@ const Home = () => {
                         <h5 className="card-title">
                           {store.student.student.student.registrationNumber}
                         </h5>
-                        <Link to="/student/updateProfile">UPDATE PROFILE</Link>
+                        <Link className="nav-link text-success " to="/student/updateProfile">
+                         Update Profile
+                        </Link>
                       </div>
                     </div>
                   </div>

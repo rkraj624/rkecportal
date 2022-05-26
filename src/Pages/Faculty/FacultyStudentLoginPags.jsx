@@ -90,7 +90,7 @@ const FacultyStudentLoginPags = () => {
 
   return (
     <>
-      <nav className="fixed navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className=" navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark ">
         <Link className="navbar-brand" to="/">
           RK Engineering College
         </Link>
@@ -144,7 +144,7 @@ const FacultyStudentLoginPags = () => {
       <div
         className="modal fade"
         id="exampleModal"
-        tabindex="-1"
+        tabIndex="-1"
         role="dialog"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
@@ -223,8 +223,10 @@ const FacultyStudentLoginPags = () => {
 
                     {!isFacultyLoading && (
                       <button
-                        className="btn btn-info btn-block"
+                        className="btn btn-primary btn-block"
                         onClick={facultyFormHandler}
+                        data-dismiss="modal"
+                        aria-label="Close"
                       >
                         Login
                       </button>
@@ -324,7 +326,7 @@ const FacultyStudentLoginPags = () => {
                     {!isStudentLoading && (
                       <button
                         onClick={studentFormHandler}
-                        className="btn btn-info btn-block "
+                        className="btn btn-primary btn-block "
                         data-dismiss="modal"
                         aria-label="Close"
                       >

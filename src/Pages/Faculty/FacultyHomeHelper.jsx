@@ -21,40 +21,66 @@ const Home = () => {
         history.push('/')
     }
     return (
-        <div className="container-fluid">
             <div className="row">
                 <div className="col">
-                    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                        <h4 className="navbar-brand mt-1" href="">RKEC</h4>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <div className="collapse navbar-collapse" id="navbarNav">
-                            <ul className="navbar-nav">
-                                <li className="nav-item active">
-                                    <button type="button" className="btn"><Link to="/home"><li>{name.toUpperCase()}</li></Link></button>
-                                </li>
-                                <li className="nav-item">
-                                    <button type="button" className="btn"><Link to="/faculty/updateProfile"><li>UPDATE PROFILE</li></Link></button>
-                                </li>
-                                <li className="nav-item">
-                                    <button type="button" className="btn"><Link to="/attendenceFaculty"><li>MARK ATTENDANCE</li></Link></button>
-                                </li>
-                                <li className="nav-item">
-                                    <button type="button" className="btn"><Link to="/faculty/uploadMarks"><li>UPLOAD MARKS</li></Link></button>
-                                </li>
-                                <li className="nav-item">
-                                    <button type="button" className="btn"><Link to="/faculty/updatePassword"><li>UPDATE PASSWORD</li></Link></button>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <button style={{listStyle:"None"}} onClick={logoutHandler} type="button" className="btn"><li>LOGOUT</li></button>
-                        </div>
-                    </nav>
+                <nav className="fixed navbar navbar-expand-lg navbar-dark bg-dark">
+                <Link className="navbar-brand" to="/">
+                  RK Engineering College
+                </Link>
+                <button
+                  className="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+                
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul className="navbar-nav mr-auto"></ul>
+                  <li className="nav-item active list-unstyled">
+                    <Link className="nav-link text-white " to="/home">
+                      {name.toUpperCase()}
+                    </Link>
+                  </li>
+                  <li className="nav-item list-unstyled">
+                    <Link className="nav-link text-white " to="/faculty/updateProfile">
+                     Update Profile
+                    </Link>
+                  </li>
+                  <li className="nav-item list-unstyled">
+                    <Link className="nav-link text-white " to="/attendenceFaculty">
+                      Mark Attendence
+                    </Link>
+                  </li>
+                  <li className="nav-item list-unstyled">
+                    <Link className="nav-link text-white " to="/faculty/uploadMarks">
+                     Upload Marks
+                    </Link>
+                  </li>
+                  <li className="nav-item list-unstyled">
+                    <Link className="nav-link text-white " to="/faculty/updatePassword">
+                     Update Password
+                    </Link>
+                  </li>
+                 
+                  <div>
+                    <button
+                      style={{ listStyle: "None" }}
+                      onClick={logoutHandler}
+                      type="button"
+                      className="btn"
+                    >
+                      <li className="text-white">Logout</li>
+                    </button>
+                  </div>
+                </div>
+                </nav>
                 </div>
             </div>
-        </div>
     )
 }
 

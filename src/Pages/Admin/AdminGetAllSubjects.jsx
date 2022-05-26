@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 import { adminGetAllSubject } from '../../redux/action/adminAction'
-import AdminHomeHelper from './AdminHomeHelper'
+import AdminNavbar from './AdminNavbar'
 
 import classnames from 'classnames'
 
@@ -32,7 +32,7 @@ const AdminGetAllSubjects = () => {
         <div>
             <div>
                 {store.admin.isAuthenticated ? <>
-                    <AdminHomeHelper />
+                    <AdminNavbar />
                     <div className="container">
                         <div className="row mt-5">
                             <div className="col-md-4">

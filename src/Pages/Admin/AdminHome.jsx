@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom'
-import AdminHomeHelper from './AdminHomeHelper'
+import Navbar from './AdminNavbar'
 
 
 const AdminHome = () => {
@@ -12,7 +12,7 @@ const AdminHome = () => {
         <div>
            
             {store.admin.isAuthenticated ? <>
-                <AdminHomeHelper />
+                <Navbar />
                 <div className="container">
                     <div className="row mt-5">
                         <div className="col-2">

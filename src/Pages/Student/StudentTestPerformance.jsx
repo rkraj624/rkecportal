@@ -24,7 +24,7 @@ const StudentTestPerformance = () => {
                 <div className="col-md-8 m-auto">
                   {store.student.allMarks.CycleTest1.length !== 0 ? (
                     <>
-                      <h4>Cycle Test 1</h4>
+                      <h4>CA 1</h4>
                       <table className="table border">
                         <thead>
                           <tr>
@@ -62,7 +62,7 @@ const StudentTestPerformance = () => {
                 <div className="col-md-8 m-auto">
                   {store.student.allMarks.CycleTest2.length !== 0 ? (
                     <>
-                      <h4>Cycle Test 2</h4>
+                      <h4>CA 2</h4>
                       <table className="table">
                         <thead>
                           <tr>
@@ -94,6 +94,7 @@ const StudentTestPerformance = () => {
                 </div>
               </div>
             )}
+           
 
             {store.student.allMarks.Semester && (
               <div className="row mt-3">

@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 import classnames from 'classnames'
 import { adminAddStudent } from '../../redux/action/adminAction'
-import AdminHomeHelper from './AdminHomeHelper'
+import AdminNavbar from './AdminNavbar'
 
 
 
@@ -61,7 +61,7 @@ const AdminAddStudent = () => {
     }, [store.error, store.admin.adminAddStudentFlag])
     return (
         <div>
-            {store.admin.isAuthenticated ? <><AdminHomeHelper />
+            {store.admin.isAuthenticated ? <><AdminNavbar />
                 <div className="container mt-5">
                     <div className="row ">
                         <div className="col">
